@@ -21,7 +21,7 @@ const LandingPage = () => {
                 <div className="row ">
                     <div className="col-12">
                         <div className="" >
-                        <h3>EMEA Data Maturity Benchmark Assessment & Report</h3>
+                        <h3>Landing page title</h3>
                             <h2>Coming Soon</h2> 
                         </div>
                     </div>
