@@ -6,34 +6,18 @@ import { getDictionary } from '@/data/dictionary';
 import { Locale } from '@/i18n';
 import LandingPage from '@/components/layout/landing/landingPage';
 import { getServerSession } from 'next-auth';
-import { json } from 'stream/consumers';
-import { Lan } from '@mui/icons-material';
-
-
-
 
 
 const Home = async ({params: {lang} }
   : { params: {lang: Locale} }
 ) => {
 
-  // const session = await getServerSession();
-  // const {  metadata } = await getDictionary(lang)
+   const session = await getServerSession();
+   const {  metadata } = await getDictionary(lang)
 
   return (
     <div className="main-body app ">
-page root
-      </div>
-   
-    
-    
-  )
-}
-
-export default Home
-
-
-/* <Suspense fallback="loading">
+<Suspense fallback="loading">
     <div className="main-body app ">
     <div className="horizontalMenucontainer">
     
@@ -54,4 +38,15 @@ export default Home
       </div>
     </div>
   </div>
-</Suspense> */
+</Suspense>
+      </div>
+   
+    
+    
+  )
+}
+
+export default Home
+
+
+/*  */
