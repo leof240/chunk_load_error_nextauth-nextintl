@@ -1,39 +1,24 @@
-import '@/styles/globals.scss'
+
+import LandingPage from "@/components/layout/landing/landingPage";
+import { Locale } from "@/i18n";
+import { getServerSession } from "next-auth";
+import Image from "next/image";
 
 
+export default  function Home({ params: { lang } }
+  : { params: { lang: Locale } }) {
 
-
-import { getServerSession } from 'next-auth';
-
-// locale imports
-import { Locale, i18nConfig } from "@/i18n";
-import  SessionProvider from  '@/components/context/AuthProvider'
-
-
-
-
-
-
-export default async function RootLayout({ children, params: { lang } }
-  : { children: React.ReactNode, params: { lang: Locale } }) {
-
-  if (!lang || !i18nConfig.locales.includes(lang)) {
-    lang = 'en'
-  }
-
-
-  const session = await getServerSession();
-
-   // <html lang="en"> 
+//server session: {session ? JSON.stringify(session) : "No session"}
   return (
-    <html lang={lang}> 
+    <main >
+      <div >
+        Main Page Lang
+       
+       
+      </div>
+<div> lang = {lang}</div>
+     <LandingPage />
 
-      <body suppressHydrationWarning={true}>
-        <SessionProvider session={session}>
-      layout session = {JSON.stringify(session)}
-          {children}
-      </SessionProvider>
-      </body>
-    </html>
-  )
+    </main>
+  );
 }

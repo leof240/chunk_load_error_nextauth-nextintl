@@ -1,15 +1,6 @@
-'use client'
+
 import React from 'react';
-//import CountDown from 'reactjs-countdown';
-
-// component
-
-// images
-
-// css
-//import '@/public/assets/scss/comingsoon.module.scss';
-
-import {signIn, signOut, useSession} from 'next-auth/react'
+import LoginButton from '@/components/context/login';
 
 const LandingPage = () => {
 
@@ -28,24 +19,7 @@ const LandingPage = () => {
                     
                   
                 </div>
-                <div className="row">
-                <div className="col-6">
-                      <button onClick={() => {
-                        signIn('credentials', {
-      email: 'leof240@gmail.com',
-      password: 'fra',
-      redirect: false,
-    })}
-    
-}>Sign in with Email</button>
-                    </div>
-                    <div className="col-6">
-                      <button onClick={() => {
-                        signOut()}
-    
-}>Sign Out</button>
-                    </div>
-                    </div>
+                <LoginButton metadata={null} />
             </div>
         </div>
     )
