@@ -1,0 +1,83 @@
+:root {
+    --primary-bg-color: #1714AA;
+    --primary-bg-hover: #403fad;
+    --secondary-bg-border: #403fad;
+    --primary-bg-border: #6259ca;
+    --secondary-color: #d0d0e2;
+    --primary-color: #1714AA; 
+    --primary02: rgba(28, 213, 174, 0.2); 
+    --primary05: rgba(28, 213, 174, 0.5);
+    --primary-transparentcolor: rgba(28, 213, 174, 0.2);
+    --transparentprimary-transparentcolor: rgba(255, 255, 255, 0.05);
+    --transparent-body: #38cab3;
+    --transparent-theme: rgba(0, 0, 0, 0.1);
+    --blue: var(--primary-bg-color);
+    --indigo: #38cab3;
+    --purple: #ad4ffa;
+    --pink: #f754fa;
+    --red: #f34343;
+    --orange: #B78521;
+    --orange50:  rgba(183, 133, 33, 0.5);
+    --orange70:  rgba(183, 133, 33, 0.7);
+    --orange0:  #7FB78521;
+    --yellow: #ffbd5a;
+    --green: #24d5b8;
+    --teal: #29ddee;
+    --cyan: #4ec2f0;
+    --white: #fff;
+    --gray: #7987a1;
+    --gray-dark: #383853;
+    --secondary: #7987a1;
+    --success: #24d5b8;
+    --info: #4ec2f0;
+    --warning: #ffbd5a;
+    --danger: #f34343;
+    --light: #f9f9fb;
+    --dark: #383853;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 992px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.75rem;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 900;  
+
+    --secondary-bg-color: #6259ca;
+    --secondary-bg-hover: #5c5ac3;
+    --secondary-bg-active: #8b89d4;
+    --secondary-bg-border: #5c5ac3;
+    --secondary-bg-border2: rgba(95, 70, 228, 0.5);
+    --choice-bg: #e5e9f3;
+
+    /* Survey Buttons */
+    --survey-bg-color: #6259ca;
+    --survey-bg-hover: #8b89d4;
+    --survey-bg-active: #8b89d4;
+    --survey-bg-border: #5c5ac3;
+    --survey-color: #252d47;
+    --survey-choice-bg: #e5e9f3;
+
+    --next-bg-color: #6259ca;
+    --next-bg-hover: #8b89d4;
+    --next-bg-border: #5c5ac3;
+    --next-color: #e5e9f3;
+
+    --prev-bg-color: #7987a1;
+    --prev-bg-hover: #8b89d4;
+    --prev-bg-border: #252d47;
+    --prev-color: #252d47;
+
+    --form-label-color: #9393b5;
+    --form-label-color2: #252d47;
+    --form-label-tip-color: #252d47;
+    --form-label-tip-bg: #e5e9f3;
+}
